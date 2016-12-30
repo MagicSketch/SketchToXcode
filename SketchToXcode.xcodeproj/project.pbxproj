@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7BD2D11E16826400B9724A /* CocoaScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7BD2CC1E167DCA00B9724A /* CocoaScript.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1A7BD2D41E168E3600B9724A /* SketchToXcodeBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7BD2D21E168E3600B9724A /* SketchToXcodeBlock.h */; };
+		1A7BD2D51E168E3600B9724A /* SketchToXcodeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BD2D31E168E3600B9724A /* SketchToXcodeBlock.m */; };
 		1AB1B22F1E1635BC0035C321 /* SketchToXcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB1B2251E1635BC0035C321 /* SketchToXcode.framework */; };
 		1AB1B2341E1635BC0035C321 /* SketchToXcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1B2331E1635BC0035C321 /* SketchToXcodeTests.m */; };
 		1AB1B2361E1635BC0035C321 /* SketchToXcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB1B2281E1635BC0035C321 /* SketchToXcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +71,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A7BD2CC1E167DCA00B9724A /* CocoaScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaScript.framework; sourceTree = "<group>"; };
+		1A7BD2CF1E16824000B9724A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A7BD2D21E168E3600B9724A /* SketchToXcodeBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchToXcodeBlock.h; sourceTree = "<group>"; };
+		1A7BD2D31E168E3600B9724A /* SketchToXcodeBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchToXcodeBlock.m; sourceTree = "<group>"; };
 		1AB1B2251E1635BC0035C321 /* SketchToXcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SketchToXcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB1B2281E1635BC0035C321 /* SketchToXcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SketchToXcode.h; sourceTree = "<group>"; };
 		1AB1B2291E1635BC0035C321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		1AB1B2571E16372C0035C321 /* Sketch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sketch; sourceTree = "<group>"; };
 		1AB1B2631E163EAD0035C321 /* SketchToXcodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchToXcodeModel.h; sourceTree = "<group>"; };
 		1AB1B2641E163EAD0035C321 /* SketchToXcodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchToXcodeModel.m; sourceTree = "<group>"; };
+		1ADA99C81E167D9D00A19F30 /* Mocha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mocha.framework; sourceTree = "<group>"; };
 		1AFB8C7D1E166DCA00B60559 /* SketchToXcode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SketchToXcode.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7BD2D11E16826400B9724A /* CocoaScript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,13 +117,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7BD2CE1E16824000B9724A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A7BD2CF1E16824000B9724A /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1AB1B21B1E1635BC0035C321 = {
 			isa = PBXGroup;
 			children = (
+				1A7BD2CC1E167DCA00B9724A /* CocoaScript.framework */,
+				1ADA99C81E167D9D00A19F30 /* Mocha.framework */,
 				1AB1B2271E1635BC0035C321 /* SketchToXcode */,
 				1AB1B2321E1635BC0035C321 /* SketchToXcodeTests */,
 				1AB1B2441E1635FB0035C321 /* SketchToXcodePlugin */,
 				1AB1B2261E1635BC0035C321 /* Products */,
+				1A7BD2CE1E16824000B9724A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +153,8 @@
 			children = (
 				1AFB8C7D1E166DCA00B60559 /* SketchToXcode.js */,
 				1AB1B2281E1635BC0035C321 /* SketchToXcode.h */,
+				1A7BD2D21E168E3600B9724A /* SketchToXcodeBlock.h */,
+				1A7BD2D31E168E3600B9724A /* SketchToXcodeBlock.m */,
 				1AB1B2631E163EAD0035C321 /* SketchToXcodeModel.h */,
 				1AB1B2641E163EAD0035C321 /* SketchToXcodeModel.m */,
 				1AB1B2291E1635BC0035C321 /* Info.plist */,
@@ -165,6 +187,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7BD2D41E168E3600B9724A /* SketchToXcodeBlock.h in Headers */,
 				1AB1B2361E1635BC0035C321 /* SketchToXcode.h in Headers */,
 				1AB1B2651E163EAD0035C321 /* SketchToXcodeModel.h in Headers */,
 			);
@@ -313,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7BD2D51E168E3600B9724A /* SketchToXcodeBlock.m in Sources */,
 				1AB1B2661E163EAD0035C321 /* SketchToXcodeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +475,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SketchToXcode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -471,6 +499,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SketchToXcode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

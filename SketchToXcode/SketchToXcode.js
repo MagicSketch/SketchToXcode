@@ -21,3 +21,9 @@ var SketchToXcode_Log = SketchToXcode_Log || log;
         return false;
     }
 })();
+
+
+var SketchToXcodeBlockCreate = function(handler) {
+    var block = SketchToXcodeBlock.targetWithJSFunction(handler);
+    return block;
+};

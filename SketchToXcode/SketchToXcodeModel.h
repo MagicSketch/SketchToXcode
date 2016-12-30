@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class MOJavaScriptObject;
+
 @interface SketchToXcodeModel : NSObject
 
 - (NSString *)combineString:(NSString *)string1 withString:(NSString *)string2;
+- (void)doSomethingSync:(MOJavaScriptObject *)block;
+- (void)doSomethingAsync:(MOJavaScriptObject *)block delay:(NSUInteger)seconds;
 
 @end
