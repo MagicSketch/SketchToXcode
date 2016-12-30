@@ -15,5 +15,6 @@
 - (NSString *)combineString:(NSString *)string1 withString:(NSString *)string2;
 - (void)doSomethingSync:(MOJavaScriptObject *)block;
 - (void)doSomethingAsync:(MOJavaScriptObject *)block delay:(NSUInteger)seconds;
+- (void)doSomethingInBackground:(MOJavaScriptObject *)block completion:(MOJavaScriptObject *)completion;
 
 @end

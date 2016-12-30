@@ -38,4 +38,19 @@
     });
 }
 
+- (void)doSomethingInBackground:(MOJavaScriptObject *)target completion:(MOJavaScriptObject *)completion {
+    COScript *script = [COScript currentCOScript];
+    [script setShouldKeepAround:YES];
+
+    SketchToXcodeBlock *background = [[SketchToXcodeBlock alloc] initWithJSFunction:target];
+    SketchToXcodeBlock *completed = [[SketchToXcodeBlock alloc] initWithJSFunction:completion];
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        [background callAction:self];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [completed callAction:self];
+        });
+    });
+}
+
 @end

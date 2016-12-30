@@ -11,11 +11,25 @@
 
     "commands": [
                  {
-                     "name" : "Run",
-                     "identifier" : "onRun",
-                     "shortcut" : "",
-                     "script" : "main.js",
-                     "handler" : "onRun"
+                 "name" : "Basic",
+                 "identifier" : "basic",
+                 "shortcut" : "",
+                 "script" : "main.js",
+                 "handler" : "runBasicExample"
+                 },
+                 {
+                 "name" : "Async",
+                 "identifier" : "async",
+                 "shortcut" : "",
+                 "script" : "main.js",
+                 "handler" : "runAsyncExample"
+                 },
+                 {
+                 "name" : "Background",
+                 "identifier" : "background",
+                 "shortcut" : "",
+                 "script" : "main.js",
+                 "handler" : "runBackgroundExample"
                  },
                  ],
     "menu": {
@@ -23,7 +37,9 @@
         "shortcut" : "",
         "title": "SketchToXcode",
         "items": [
-                  "onRun",
+                  "basic",
+                  "async",
+                  "background",
                   ]
     }
 }
