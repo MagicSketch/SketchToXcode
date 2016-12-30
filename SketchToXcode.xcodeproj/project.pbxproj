@@ -10,6 +10,11 @@
 		1AB1B22F1E1635BC0035C321 /* SketchToXcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB1B2251E1635BC0035C321 /* SketchToXcode.framework */; };
 		1AB1B2341E1635BC0035C321 /* SketchToXcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1B2331E1635BC0035C321 /* SketchToXcodeTests.m */; };
 		1AB1B2361E1635BC0035C321 /* SketchToXcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB1B2281E1635BC0035C321 /* SketchToXcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AB1B25A1E1637690035C321 /* Sketch in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AB1B2571E16372C0035C321 /* Sketch */; };
+		1AB1B25E1E1639AC0035C321 /* SketchToXcode.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AB1B2251E1635BC0035C321 /* SketchToXcode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AB1B2651E163EAD0035C321 /* SketchToXcodeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB1B2631E163EAD0035C321 /* SketchToXcodeModel.h */; };
+		1AB1B2661E163EAD0035C321 /* SketchToXcodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1B2641E163EAD0035C321 /* SketchToXcodeModel.m */; };
+		1AFB8C7F1E166DD300B60559 /* SketchToXcode.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AFB8C7D1E166DCA00B60559 /* SketchToXcode.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +25,47 @@
 			remoteGlobalIDString = 1AB1B2241E1635BC0035C321;
 			remoteInfo = SketchToXcode;
 		};
+		1AB1B25B1E1639850035C321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB1B21C1E1635BC0035C321 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB1B2241E1635BC0035C321;
+			remoteInfo = SketchToXcode;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AB1B2591E1637610035C321 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				1AB1B25A1E1637690035C321 /* Sketch in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB1B25D1E16399F0035C321 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Sketch;
+			dstSubfolderSpec = 1;
+			files = (
+				1AB1B25E1E1639AC0035C321 /* SketchToXcode.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB1B2611E1639E90035C321 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				1AFB8C7F1E166DD300B60559 /* SketchToXcode.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AB1B2251E1635BC0035C321 /* SketchToXcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SketchToXcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +74,12 @@
 		1AB1B22E1E1635BC0035C321 /* SketchToXcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchToXcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB1B2331E1635BC0035C321 /* SketchToXcodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SketchToXcodeTests.m; sourceTree = "<group>"; };
 		1AB1B2351E1635BC0035C321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB1B2431E1635FB0035C321 /* SketchToXcodePlugin.sketchplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchToXcodePlugin.sketchplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB1B2451E1635FB0035C321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB1B2571E16372C0035C321 /* Sketch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sketch; sourceTree = "<group>"; };
+		1AB1B2631E163EAD0035C321 /* SketchToXcodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchToXcodeModel.h; sourceTree = "<group>"; };
+		1AB1B2641E163EAD0035C321 /* SketchToXcodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchToXcodeModel.m; sourceTree = "<group>"; };
+		1AFB8C7D1E166DCA00B60559 /* SketchToXcode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SketchToXcode.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AB1B2401E1635FB0035C321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +113,7 @@
 			children = (
 				1AB1B2271E1635BC0035C321 /* SketchToXcode */,
 				1AB1B2321E1635BC0035C321 /* SketchToXcodeTests */,
+				1AB1B2441E1635FB0035C321 /* SketchToXcodePlugin */,
 				1AB1B2261E1635BC0035C321 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +123,7 @@
 			children = (
 				1AB1B2251E1635BC0035C321 /* SketchToXcode.framework */,
 				1AB1B22E1E1635BC0035C321 /* SketchToXcodeTests.xctest */,
+				1AB1B2431E1635FB0035C321 /* SketchToXcodePlugin.sketchplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +131,10 @@
 		1AB1B2271E1635BC0035C321 /* SketchToXcode */ = {
 			isa = PBXGroup;
 			children = (
+				1AFB8C7D1E166DCA00B60559 /* SketchToXcode.js */,
 				1AB1B2281E1635BC0035C321 /* SketchToXcode.h */,
+				1AB1B2631E163EAD0035C321 /* SketchToXcodeModel.h */,
+				1AB1B2641E163EAD0035C321 /* SketchToXcodeModel.m */,
 				1AB1B2291E1635BC0035C321 /* Info.plist */,
 			);
 			path = SketchToXcode;
@@ -86,6 +149,15 @@
 			path = SketchToXcodeTests;
 			sourceTree = "<group>";
 		};
+		1AB1B2441E1635FB0035C321 /* SketchToXcodePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1B2571E16372C0035C321 /* Sketch */,
+				1AB1B2451E1635FB0035C321 /* Info.plist */,
+			);
+			path = SketchToXcodePlugin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB1B2361E1635BC0035C321 /* SketchToXcode.h in Headers */,
+				1AB1B2651E163EAD0035C321 /* SketchToXcodeModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +181,7 @@
 				1AB1B2211E1635BC0035C321 /* Frameworks */,
 				1AB1B2221E1635BC0035C321 /* Headers */,
 				1AB1B2231E1635BC0035C321 /* Resources */,
+				1AB1B2611E1639E90035C321 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -136,6 +210,26 @@
 			productReference = 1AB1B22E1E1635BC0035C321 /* SketchToXcodeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1AB1B2421E1635FB0035C321 /* SketchToXcodePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB1B2461E1635FB0035C321 /* Build configuration list for PBXNativeTarget "SketchToXcodePlugin" */;
+			buildPhases = (
+				1AB1B23F1E1635FB0035C321 /* Sources */,
+				1AB1B2401E1635FB0035C321 /* Frameworks */,
+				1AB1B2591E1637610035C321 /* CopyFiles */,
+				1AB1B25D1E16399F0035C321 /* CopyFiles */,
+				1AB1B2671E1657760035C321 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB1B25C1E1639850035C321 /* PBXTargetDependency */,
+			);
+			name = SketchToXcodePlugin;
+			productName = SketchToXcodePlugin;
+			productReference = 1AB1B2431E1635FB0035C321 /* SketchToXcodePlugin.sketchplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +245,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					1AB1B22D1E1635BC0035C321 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 78BJD4M4CR;
+						ProvisioningStyle = Automatic;
+					};
+					1AB1B2421E1635FB0035C321 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 78BJD4M4CR;
 						ProvisioningStyle = Automatic;
@@ -171,6 +270,7 @@
 			targets = (
 				1AB1B2241E1635BC0035C321 /* SketchToXcode */,
 				1AB1B22D1E1635BC0035C321 /* SketchToXcodeTests */,
+				1AB1B2421E1635FB0035C321 /* SketchToXcodePlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -192,11 +292,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AB1B2671E1657760035C321 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Installing ${WRAPPER_NAME} to ~/Library/Application\\ Support/com.bohemiancoding.sketch3/Plugins/\"\ncp -rf ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} ~/Library/Application\\ Support/com.bohemiancoding.sketch3/Plugins/\necho \"... Finished!\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AB1B2201E1635BC0035C321 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB1B2661E163EAD0035C321 /* SketchToXcodeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +325,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AB1B23F1E1635FB0035C321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -215,6 +339,11 @@
 			isa = PBXTargetDependency;
 			target = 1AB1B2241E1635BC0035C321 /* SketchToXcode */;
 			targetProxy = 1AB1B2301E1635BC0035C321 /* PBXContainerItemProxy */;
+		};
+		1AB1B25C1E1639850035C321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB1B2241E1635BC0035C321 /* SketchToXcode */;
+			targetProxy = 1AB1B25B1E1639850035C321 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -376,6 +505,34 @@
 			};
 			name = Release;
 		};
+		1AB1B2471E1635FB0035C321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 78BJD4M4CR;
+				INFOPLIST_FILE = SketchToXcodePlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = io.magicsketch.SketchToXcodePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = sketchplugin;
+			};
+			name = Debug;
+		};
+		1AB1B2481E1635FB0035C321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 78BJD4M4CR;
+				INFOPLIST_FILE = SketchToXcodePlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = io.magicsketch.SketchToXcodePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = sketchplugin;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +552,7 @@
 				1AB1B23B1E1635BC0035C321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AB1B23C1E1635BC0035C321 /* Build configuration list for PBXNativeTarget "SketchToXcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +561,16 @@
 				1AB1B23E1E1635BC0035C321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB1B2461E1635FB0035C321 /* Build configuration list for PBXNativeTarget "SketchToXcodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB1B2471E1635FB0035C321 /* Debug */,
+				1AB1B2481E1635FB0035C321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

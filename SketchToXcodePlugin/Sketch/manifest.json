@@ -1,0 +1,29 @@
+{
+    "name": "SketchToXcode",
+    "description" : "",
+    "author": "",
+    "authorEmail" : "",
+    "homepage": "https://github.com/MagicSketch/SketchToXcode",
+    "identifier" : "io.magicsketch.SketchToXcode",
+    "compatibleVersion": "41",
+    "build": 1,
+    "version": "1.0",
+
+    "commands": [
+                 {
+                     "name" : "Run",
+                     "identifier" : "onRun",
+                     "shortcut" : "",
+                     "script" : "main.js",
+                     "handler" : "onRun"
+                 },
+                 ],
+    "menu": {
+        "isRoot" : false,
+        "shortcut" : "",
+        "title": "SketchToXcode",
+        "items": [
+                  "onRun",
+                  ]
+    }
+}
